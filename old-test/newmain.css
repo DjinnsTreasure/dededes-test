@@ -1,0 +1,160 @@
+/* 12/18/2022 */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+hr {
+	border: 2px dashed #989e9a;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+header img {
+    object-fit: cover;
+    display: block;
+}
+
+nav {
+    padding-top: 0;
+    margin-top: 0;
+}
+
+.indent {
+	text-indent: 8%;
+}
+
+body {
+	max-width: 70%;
+	margin: 28px auto;
+    background-color: #ABDBD2;
+    color: #4D3A3C;
+	border: 3px solid #989e9a;
+	
+}
+
+footer {
+	text-align: center;
+	margin: 16px;
+	padding: 6px;
+	font-size: 90%;
+}
+
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #f97073;
+	border-top: 3px solid #989e9a;
+}
+
+nav li {
+	float: left;
+}
+
+nav li a {
+	font-weight: bold;
+	display: block;
+    text-align: center;
+    padding: 12px 20px;
+    color: #ededed;
+	font-family: Capriola;
+}
+
+section {
+	width: auto;
+	padding: 12px 40px;
+	min-height: 500px;
+	background-color: #dedede;
+	font-family: Capriola;
+	text-align: left;
+	line-height: 25px;
+}
+
+.otherBox {
+	max-width: 80%;
+	padding: 12px;
+	background-color: #ededed;
+	text-align: left;
+}
+
+.pageChr table td {
+	table-layout: fixed;
+	width: 40%;
+	padding: 6px;
+}
+
+.pageGallery img {
+	width: 90%;
+	height: auto;
+	border: 1px solid #989e9a;
+}
+
+.pageGallery table td {
+	width: 27%;
+	margin: 10px;
+	float: left;
+	text-align: center;
+	font-size: 85%;
+	font-family: Mochiy Pop One;
+}
+
+/*Specifically for the Gi portals in Works, for now */
+
+.portalGallery img {
+	width: 100%;
+	height: auto;
+	border: 1px solid #989e9a;
+}
+
+.portalGallery table td {
+	width: 45%;
+	margin: 6px;
+	float: left;
+}
+
+/* Link reaction */
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    color: #ed616c;
+}
+
+li a:hover {
+    text-decoration: underline;
+}
+
+a:hover, active {
+    text-decoration: underline;
+	
+}
+
+.pageGallery img:hover {
+	opacity: 0.8;
+}
+
+.portalGallery img:hover {
+	opacity: 0.8;
+}
+
+nav li a:hover {
+	background-color: #ed616c;
+}
+
+
+
+@media (orientation: portrait) {
+
+	.pageGallery table td {
+	width: 20%;
+	overflow: hidden;
+	}
+}

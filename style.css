@@ -1,0 +1,298 @@
+/* 	border: 1px solid #e01627; */
+/* #C71585 is MediumVioletRed */
+/*background-color: #a8e3d3;*/
+/* table td:first-child { 
+	border-left: none; 
+}
+	border-left: 1px solid #000; */
+	
+/* Last updates: 7/20/2022, 6/05/2022 */
+
+/* -----New content starts-----  */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+    /* border-box makes padding and margin go where you think they'll go,
+    instead of where the browser thinks they should go  */
+
+.site-title {
+    font-size: 1.5rem;
+    margin: 0;
+    margin-top: 1rem;
+}
+    /* putting the site title into its own class allows more future customization,
+    and easier control of the size/padding/location */
+
+.small-header {
+    font-size: 1.15rem;
+}
+
+    /* You can change rems to pixels or whatever other sizing you want of course */
+
+.center {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.wrapper {
+    margin: 14px;
+    display: flex;
+    flex-direction: row;
+    gap: 0.75rem;
+}
+    /* This wraps around the sidebar and all the main content on the right.
+    Flex means it's flexible and will automatically resize things to fit as screens change sizes.
+    Row means that the content will go left to right.
+    Gap is how much... gap there is between flex contents.
+    Do note, that because your navbar has a set width (150px + padding), it won't be as flexible */
+    
+
+/* -----New content ends-----  */
+
+/* ------Edited content starts------ */
+
+.mainBox {
+	/* margin: 20px 15px 20px 220px; */
+	padding: 16px;
+	background-color: #dedede;
+	text-align: left;
+	font-size: 0.95rem;
+	word-spacing: 3px;
+	line-height: 1.5;
+    background-color: lime;
+}
+
+.mainBox ul {
+	list-style: square;
+}
+
+.otherBox {
+	padding: 16px;
+	width: 75%;
+	background-color: #ededed;
+	text-align: left;
+	border-radius: 3px;
+    background-color: orange;
+    display: inline-block;
+}
+
+.navBox {
+	/* position: absolute; */
+	/* margin: 9px 13px; */
+	padding: 15px;
+	background-color: #ededed;
+	border-radius: 3px;
+    align-self: start;
+    justify-content: center;
+    align-items: center;
+    /* Positioning & margin is no longer needed, it will automatically position itself according to the rules of flex
+    Align-self start prevents it from stretching the full vertical length of the flexbox
+    justify-content / align-items center will put any other non-text content added to this flex box automatically centered */
+}
+
+
+.navBox ul {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.navBox li a {
+    width: 150px;
+	text-align: center;
+	font-weight: bold;
+	display: block;
+	padding: 6px;
+	border-radius: 2px;
+	color: #ededed;
+	background-color: #ff7578;
+}
+
+@media (orientation: portrait) {
+    .wrapper {
+        flex-direction: column;
+    }
+    /* Changes it so the flex contents will now stack */
+    .navBox {
+        align-self:auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navBox ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+        list-style-type: none;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        margin: 0;
+    }
+
+    .navBox li a {
+        width: auto;
+        padding: .5em 1em;
+        margin-bottom: 0;
+        border-radius: 2px;
+        color: #ededed;
+        background-color: #ff7578;
+    }
+
+}
+
+/* ------Edited content ends------  */
+
+.container {
+    margin: 0 auto;
+    width: auto;
+    padding: 5px;
+    min-height: 520px;
+    text-align: left;
+    background-color: #dedede;
+    font-family: Capriola;
+    border: 3px solid #989e9a;
+}
+
+.navBoxDivider {
+    font-family: 'Mochiy Pop One';
+    font-weight: bold;
+    font-size: 90%;
+    text-decoration: underline;
+}
+
+h1, h2, h3, h4 {
+	font-family: 'Mochiy Pop One';
+}
+
+hr {
+	border: 2px dashed #989e9a;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.indent {
+	text-indent: 8%;
+}
+
+body {
+	max-width: 75%;
+	margin: 30px auto;
+    background-color: #b7e5cd;
+    color: #4D3A3C;
+}
+
+header {
+	height: 90px;
+	font-family: 'Mochiy Pop One';
+	font-size: 24px;
+	padding: 10px;
+	background-color: #dedede;
+	margin: 12px;
+}
+
+footer {
+	text-align: center;
+	margin: 10px;
+	padding: 10px;
+	font-size: 90%;
+}
+
+
+.pageChr table td {
+	table-layout: fixed;
+	width: 40%;
+	padding: 6px;
+}
+
+.pageGallery img {
+	width: 90%;
+	height: auto;
+	border: 1px solid #989e9a;
+}
+
+.pageGallery table td {
+	width: 27%;
+	margin: 10px;
+	float: left;
+	text-align: center;
+	font-size: 85%;
+	font-family: 'Mochiy Pop One';
+}
+
+/*Specifically for the Gi portals in Works, for now */
+
+.portalGallery img {
+	width: 100%;
+	height: auto;
+	border: 1px solid #989e9a;
+}
+
+.portalGallery table td {
+	width: 45%;
+	margin: 6px;
+	float: left;
+}
+
+/* Link reaction */
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    color: #ed616c;
+}
+
+li a:hover {
+    text-decoration: underline;
+}
+
+a:hover, active {
+    text-decoration: underline;
+	
+}
+
+.pageGallery img:hover {
+	opacity: 0.8;
+}
+
+.portalGallery img:hover {
+	opacity: 0.8;
+}
+
+.navBox li a:hover {
+	background-color: #ed616c;
+}
+/* Responsive design elements for altering how the elements stack when viewed on smaller devices */
+/* need to do something about widening the container at this point */
+
+@media screen and (max-width: 800px) {
+		body{
+            width: 100%;
+        }
+}
+
+@media (orientation: portrait) {
+	/* .navBox {
+		position: static;
+		margin: 12px;
+		padding: 15px;
+    }
+	.mainBox {
+		margin: 12px 12px 0px;
+    } */
+	
+	.pageGallery table td {
+	width: 20%;
+	overflow: hidden;
+	}
+}
